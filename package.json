@@ -1,0 +1,28 @@
+{
+  "name": "gtv",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "npx tsc",
+    "start": "node dist/src/index.js",
+    "dev": "nodemon src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "npx @biomejs/biome check --write"
+  },
+  "author": "Kien Dang",
+  "license": "GPL-3.0-or-later",
+  "description": "",
+  "dependencies": {
+    "@graphile/simplify-inflection": "^8.0.0-beta.5",
+    "dotenv": "^16.4.5",
+    "postgraphile": "^5.0.0-beta.26"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.8.3",
+    "@swc/core": "^1.7.5",
+    "@types/node": "^20.14.10",
+    "nodemon": "^3.1.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.3"
+  }
+}
